@@ -1,0 +1,15 @@
+<div>	
+	<table class="table table-hover table-bordered custom-table">  	
+		<tr class="show-row grey-font">
+			<td width="5%"><input type="checkbox" ng-model="done" name="box"></td>
+			<td width="80%"><b ng-if="!vm.editMode" ng-class="{strike: done}">{{data.name}}</b> 
+				<input ng-if="vm.editMode" type="text" ng-model="data.name">
+			</td>
+			<td width="15%"> 
+				<button class="transparent-btn" ng-if="vm.editMode" ng-click="saveTodo()"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span></button>
+				<button class="transparent-btn" ng-if="!vm.editMode" ng-click="editTodo()"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+				<button class="transparent-btn" ng-click="todo.removeById(list.todos, data.id)"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+			</td>
+		</tr>
+	<table>	
+</div>
