@@ -7,7 +7,7 @@
 
     config.$inject = ['$urlRouterProvider'];
     function config($urlRouterProvider) {
-        $urlRouterProvider.otherwise('/todo-app');
+        $urlRouterProvider.otherwise('/');
     }
 
     run.$inject = [];
