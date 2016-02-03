@@ -7,7 +7,7 @@
         
     function todoItem() {
         var directive = {
-            templateUrl: './states/toDo/todoItem/todoItem.html',
+            templateUrl: './states/todo/todoItem/todoItem.html',
             restrict: 'E',
             controller: controller,
             scope: {
