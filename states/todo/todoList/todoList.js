@@ -7,7 +7,7 @@
         
     function todoList() {
         var directive = {
-            templateUrl: './states/toDo/todoList/todoList.html',
+            templateUrl: './states/todo/todoList/todoList.html',
             restrict: 'E',
             controller: controller,
             scope: {
